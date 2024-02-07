@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="master">
+      <div class="gif"></div>
+      <img src="assests/valentine.gif" alt="question" />
+      <div class="buttons">
+        <div class="yes">
+          <button id="btn_yes" name="YES" onclick="secondPage()">YES</button>
+        </div>
+        <div class="no">
+          <button id="btn_no" onclick="counter()" name="NO">NO</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    check = [
+      "Please",
+      "Mann ja",
+      "Please mann ja",
+      "sure ??",
+      "Dekh le yaar",
+      "okay bye!!!",
+      "Definitely",
+      "Yup",
+      "Alright",
+      "Without a doubt",
+      "Positive",
+      "Absolutely",
+      "50-50 ?",
+      "Okay",
+      "All right",
+      "By all means",
+      "Roger that",
+      "Very well",
+      "You bet",
+      "Indubitably",
+    ];
+    let count = 1;
+    function counter() {
+      document.getElementById("btn_yes").innerHTML = check[count];
+      document.getElementById("btn_yes").style.width = count * 100 + "px";
+      document.getElementById("btn_yes").style.height = count * 100 + "px";
+      count++;
+    //   alert(count);
+      //   console.log(count);
+    }
+
+    function secondPage(){
+        window.location.href = 'index2.html';
+    }
+
+  </script>
+</html>
